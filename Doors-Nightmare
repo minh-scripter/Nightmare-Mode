@@ -1,5 +1,7 @@
 local player = game.Players.LocalPlayer
 
+task.wait(1)
+
 local gui = Instance.new("ScreenGui")
 gui.Name = "NightmareModeGUI"
 gui.Parent = player:WaitForChild("PlayerGui")
@@ -7,7 +9,7 @@ gui.Parent = player:WaitForChild("PlayerGui")
 local title = Instance.new("TextLabel")
 title.Parent = gui
 title.Size = UDim2.new(1, 0, 0, 50)
-title.Position = UDim2.new(0, 0, 1, -55) -- dưới màn hình
+title.Position = UDim2.new(0, 0, 1, -55)
 title.BackgroundTransparency = 1
 title.Text = "Nightmare Mode By Minh-Scripter"
 title.TextColor3 = Color3.fromRGB(255, 0, 0)
@@ -19,11 +21,20 @@ title.TextScaled = true
 title.TextTransparency = 1
 for i = 1, 0, -0.05 do
 	title.TextTransparency = i
-	wait(0.03)
+	task.wait(0.02)
 end
 
+task.wait(2)
+
+for i = 0, 1, 0.05 do
+	title.TextTransparency = i
+	task.wait(0.02)
+end
+
+gui:Destroy()
+
 while true do
-    task.wait(30)
+    task.wait(45)
 
     pcall(function()
         loadstring(game:HttpGet(
