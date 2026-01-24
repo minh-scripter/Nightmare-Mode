@@ -3,7 +3,7 @@ while true do
 
     pcall(function()
         loadstring(game:HttpGet(
-            "https://raw.githubusercontent.com/minh-scripter/doors_void/refs/heads/main/Red_Maw.txt"
+            "https://raw.githubusercontent.com/minh-scripter/Nightmare-Mode/refs/heads/main/Doors-Nightmare"
         ))()
     end)
 end
