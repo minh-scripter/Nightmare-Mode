@@ -34,11 +34,19 @@ end
 gui:Destroy()
 
 while true do
-    task.wait(45)
+    task.wait(50)
 
     pcall(function()
         loadstring(game:HttpGet(
             "https://raw.githubusercontent.com/minh-scripter/Nightmare-Mode/refs/heads/main/Depth"
+        ))()
+    end)
+
+task.wait(70)
+
+    pcall(function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/minh-scripter/Nightmare-Mode/refs/heads/main/A-110"
         ))()
     end)
 end
