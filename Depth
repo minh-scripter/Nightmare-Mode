@@ -13,13 +13,13 @@ local entity = spawner.Create({
 	Lights = {
 		Flicker = {
 			Enabled = true,
-			Duration = 1
+			Duration = 5
 		},
-		Shatter = true,
+		Shatter = false,
 		Repair = false
 	},
 	Earthquake = {
-		Enabled = false
+		Enabled = true
 	},
 	CameraShake = {
 		Enabled = false,
@@ -28,7 +28,7 @@ local entity = spawner.Create({
 	},
 	Movement = {
 		Speed = 100,
-		Delay = 2,
+		Delay = 6,
 		Reversed = false
 	},
 	Rebounding = {
